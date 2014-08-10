@@ -1,0 +1,35 @@
+{
+  "name": "hapi-seed",
+  "version": "0.0.1",
+  "description": "Mind Kitchen's seed for hapi projects",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "./node_modules/lab/bin/lab -c",
+    "build-js": "browserify browser/main.js | uglifyjs -mc > public/js/bundle.js",
+    "watch-js": "watchify browser/main.js -o public/js/bundle.js -dv"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/mindkitchen/hapi-seed.git"
+  },
+  "keywords": [
+    "hapi",
+    "seed"
+  ],
+  "author": "Randall A. Gordon",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mindkitchen/hapi-seed/issues"
+  },
+  "homepage": "https://github.com/mindkitchen/hapi-seed",
+  "dependencies": {
+    "joi": "^4.6.1",
+    "hapi": "^6.2.0",
+    "handlebars": "^2.0.0-alpha.4",
+    "domready": "^1.0.5"
+  },
+  "devDependencies": {
+    "lab": "^3.2.1"
+  }
+}
